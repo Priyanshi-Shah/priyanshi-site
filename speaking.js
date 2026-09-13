@@ -25,6 +25,7 @@ const gatherings=[
  {name:'NeurIPS 2023',description:'Connecting with researchers and exchanging ideas across machine learning.',badge:'RESEARCH / CONNECTIONS',photos:['neurips-2023.jpg']}
 ];
 const uploadCaptions={
+ 2:'TechCrunch Disrupt · San Francisco',
  3:'GHC',
  5:'Grace Hopper Conference 2024',
  6:'HackMIT 2024',
@@ -62,6 +63,7 @@ let points=[],length=0,raf=0,current=null,targetLength=0,lastFrame=0;
 function layout(){
  if(root.hidden)return;
  const s=stage.getBoundingClientRect();
+ root.querySelector('.speaking-background').style.height=stage.offsetHeight+'px';
  root.querySelector('.speaking-landscape').style.height=(stage.offsetHeight*1.06)+'px';
  points=islands.map(el=>{const r=el.getBoundingClientRect();return{x:r.left-s.left+r.width*.5,y:r.bottom-s.top+25,index:islands.indexOf(el)}});
  points.sort((a,b)=>a.y-b.y);
