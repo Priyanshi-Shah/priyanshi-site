@@ -1,0 +1,92 @@
+#speakingWorld{position:fixed;inset:0;z-index:4;overflow-y:auto;overflow-x:hidden;background:#101b31;overscroll-behavior:contain}
+#speakingWorld[hidden]{display:none}
+.speaking-view .hero,.speaking-view footer,.speaking-view #mobileNav,.speaking-view .orb,.speaking-view #guideTrail{visibility:hidden}
+.speaking-view #about{display:none}.speaking-view header{background:linear-gradient(#111a30e8,#111a3000)}
+.speaking-landscape{position:absolute;inset:0;pointer-events:none;background:url('assets/speaking/world.png') center top/100% 100% no-repeat;opacity:.85}
+.speaking-stage{position:relative;max-width:1250px;margin:auto;padding:140px 6% 100px;isolation:isolate}
+.speaking-hero{display:grid;grid-template-columns:.85fr 1.15fr;gap:5%;align-items:center;margin-bottom:160px}
+.speaking-copy h1{font:400 clamp(46px,5.5vw,78px)/1.02 Georgia,serif;letter-spacing:-.035em}
+.speaking-copy p{color:#e5d0df;font-size:16px;line-height:1.7}
+.speak-invite{display:inline-block;padding:14px 25px;border:1px solid #ffd0aa;border-radius:30px;box-shadow:0 0 16px #ffb88b55,inset 0 0 14px #ffb88b20;background:#292137a6;color:#fff0e4;text-decoration:none;margin-top:15px;font-size:14px}
+.archive-title{font:400 clamp(35px,4vw,55px)/1.1 Georgia,serif;margin:0 0 70px;position:relative;z-index:2}
+.speaking-gallery{display:grid;grid-template-columns:1fr 1fr;gap:150px 12%;align-items:start;padding:0 4%}
+.speaking-island{position:relative;z-index:2;min-width:0;transition:filter .3s}
+.speaking-island::after{content:'';position:absolute;z-index:-1;pointer-events:none;left:-16%;width:132%;height:280px;top:calc(100% - 110px);background:url('assets/speaking/island.png') center top/100% auto no-repeat}
+.speaking-gallery .speaking-island:nth-child(even){margin-top:130px}
+.speaking-gallery .speaking-island:nth-child(3),.speaking-gallery .speaking-island:nth-child(4){width:82%}
+.speaking-gallery .speaking-island:last-child{grid-column:1 / -1;width:55%;justify-self:center;margin:10px 0 100px}
+.speaker-card{display:block;width:100%;padding:0;text-align:left;border:1px solid #efc39eaa;border-radius:9px;overflow:hidden;background:#151c30;box-shadow:0 0 12px #ffc19b22,0 15px 40px #080d2466;color:#fff0e5;transition:box-shadow .3s,transform .3s}
+button.speaker-card:hover,button.speaker-card:focus-visible,.speaking-island.is-current .speaker-card{box-shadow:0 0 0 1px #ffdab4,0 0 30px #ffc28d55;transform:translateY(-5px)}
+.speaker-card img{display:block;width:100%;aspect-ratio:1.6;object-fit:cover}
+.speaker-caption{display:block;padding:16px 18px;font-size:clamp(14px,1.5vw,19px);line-height:1.3}
+.speaker-placeholder{display:grid;place-items:center;aspect-ratio:1.6;background:radial-gradient(ellipse,#45334c,#141d31);color:#ffd6b4}
+.speaker-placeholder svg{width:65px;height:65px;stroke:currentColor;fill:none;stroke-width:1.3}
+.speaking-end{text-align:center;position:relative;z-index:2;padding-top:30px}.speaking-end>a:last-child{display:block;color:#d8c8d9;font-size:12px;margin-top:25px;text-decoration:none}
+.speaking-path{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:visible}
+.speaking-path path{fill:none;stroke:#ffc494;stroke-width:2;filter:drop-shadow(0 0 5px #ffb381)}
+#speakingBall{position:absolute;width:25px;height:25px;z-index:3;transition:none;transform:translate(-50%,-50%)}
+#speakingViewer{width:min(960px,94vw);max-width:960px;padding:18px;background:#182036}
+#speakingViewer img{width:100%;max-height:70vh;object-fit:contain;display:block}#speakingViewer h2{font:22px Georgia;margin:16px 0}
+.speaker-viewer-controls{display:flex;justify-content:space-between;align-items:center;gap:12px}.speaker-viewer-controls button{background:#ffffff10;border:1px solid #ffffff30;border-radius:20px;padding:9px 15px}
+@media(max-width:650px){.speaking-view header{padding:20px 16px;gap:8px}.speaking-view .name{font-size:8px}.speaking-view .world-nav{gap:10px}.speaking-view .world-nav a{font-size:10px}
+.speaking-stage{padding:110px 8% 70px}.speaking-hero{grid-template-columns:1fr;gap:45px;margin-bottom:145px}.speaking-copy h1{font-size:51px;max-width:300px}.speaking-copy p{font-size:14px}
+.speaking-gallery{grid-template-columns:1fr;gap:135px;padding:0 5%}.speaking-gallery .speaking-island:nth-child(n){width:92%;margin:0;grid-column:auto;justify-self:start}.speaking-gallery .speaking-island:nth-child(even){justify-self:end}
+.speaking-gallery .speaking-island:last-child{margin-bottom:120px}.speaking-island::after{height:230px;top:calc(100% - 85px)}.archive-title{margin-bottom:65px}.speaking-landscape{background-size:auto 100%}
+}
+@media(prefers-reduced-motion:reduce){.speaker-card{transition:none}#speakingBall{display:none}}
+
+#speakingTitle:focus{outline:none}.speaking-view header{background:#111a30e8;backdrop-filter:blur(12px)}
+.speaking-hero>.speaking-island::after{left:-10%;width:120%}#speakingBall{z-index:1}
+
+/* Smaller scenery, anchored by its actual surface rather than a fixed pixel offset. */
+.speaking-island{container-type:inline-size}
+.speaking-island::after,.speaking-hero>.speaking-island::after{left:.5%;width:99%;height:auto;aspect-ratio:3/2;top:calc(100% - 20cqw);background-size:100% 100%}
+.speaking-hero>.speaking-island::after{left:5%;width:90%;top:calc(100% - 18.2cqw)}
+.speaking-gallery .speaking-island:not(:last-child)::after{background-image:url('assets/speaking/island-garden.png')}
+.speaking-gallery .speaking-island:nth-child(even)::after{transform:scaleX(-1)}
+button.speaker-card:hover,button.speaker-card:focus-visible,.speaking-island.is-current .speaker-card{transform:none}
+#speakingBall{will-change:transform;left:0;top:0}
+
+/* Reuse the genuinely transparent scenery; crop the waterfall off garden variants. */
+.speaking-gallery .speaking-island:not(:last-child)::after{
+ background-image:url('assets/speaking/island.png');
+ clip-path:polygon(0 0,87% 0,87% 49%,82% 64%,72% 76%,55% 91%,0 100%);
+ top:calc(100% - 20cqw);
+}
+.speaking-gallery .speaking-island:nth-child(2)::after{filter:hue-rotate(12deg)}
+.speaking-gallery .speaking-island:nth-child(4)::after{filter:hue-rotate(-10deg)}
+.speaker-card img[src$="chancellors-alumni-panel.png"]{object-fit:contain;background:#101319}
+.speaker-card img[src$="hdsc-ribbon-cutting.png"]{object-fit:contain;background:#fff}
+/* A luminous, expandable gathering space continuing the island trail. */
+.event-world{position:relative;margin:100px -4% 20px;padding:105px 4% 80px;isolation:isolate}
+.event-world::before{content:'';position:absolute;inset:-120px -12% -80px;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 15% 38%,#c794b957,transparent 57%),radial-gradient(ellipse at 85% 60%,#599fb549,transparent 58%),linear-gradient(180deg,transparent,#705b8566 32%,#71517666 75%,transparent);mask-image:linear-gradient(transparent,#000 18%,#000 85%,transparent)}
+.event-world::after{content:'';position:absolute;inset:160px -4% 30px;z-index:-1;pointer-events:none;background-image:radial-gradient(#b4e8ef70 1px,transparent 1px);background-size:36px 36px;mask-image:radial-gradient(ellipse,#0007,transparent 72%)}
+.event-mist{position:absolute;top:-70px;left:-10%;right:-10%;height:230px;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 20% 60%,#f0cadb44,transparent 55%),radial-gradient(ellipse at 75% 50%,#b6dbef30,transparent 55%);filter:blur(24px)}
+.event-heading{text-align:center;max-width:680px;margin:0 auto 80px}
+.event-heading h2{font:400 clamp(36px,4.5vw,58px)/1.1 Georgia,serif;margin:18px 0}
+.event-heading p{font-size:16px;line-height:1.6;color:#f0dce9}
+.event-constellation{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:65px 5%;align-items:start}
+.event-node{position:relative;transform:rotate(var(--tilt));z-index:2;transition:transform .3s ease,box-shadow .3s ease;border-color:#f6ceb79c;background:linear-gradient(135deg,#403654f5,#293e53f5);box-shadow:0 12px 35px #10132f44}
+.event-node:nth-child(3n+2){margin-top:90px}.event-node:nth-child(3n){margin-top:35px}
+.event-node img{aspect-ratio:1.2;object-fit:cover}
+.event-node:first-child img{object-position:center 30%}
+.event-node .speaker-caption{padding:18px 16px;display:grid;gap:9px}
+.event-node strong{font-weight:500;font-size:17px;line-height:1.35}
+.event-node .speaker-caption>span{font-size:13px;line-height:1.5;color:#e0dbe8}
+.event-node:hover,.event-node:focus-visible,.event-node.is-current{transform:rotate(0) translateY(-6px) scale(1.035)!important;box-shadow:0 0 0 1px #f9d3b4,0 0 28px #90daed44,0 20px 45px #211d4044;z-index:3}
+.event-count{position:absolute;top:12px;right:12px;padding:5px 9px;border-radius:15px;background:#253248ce;font-size:11px;color:#fff1e3}
+@media(max-width:650px){.event-world{margin-top:60px;padding-top:60px}.event-heading{margin-bottom:45px}.event-heading p{font-size:14px}.event-constellation{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 6%}.event-node:nth-child(n){margin-top:0}.event-node:nth-child(even){margin-top:65px}.event-node:last-child{grid-column:1/-1;width:68%;justify-self:center}.event-node strong{font-size:14px}.event-node .speaker-caption>span{font-size:12px}.event-node .speaker-caption{padding:12px}}
+@media(prefers-reduced-motion:reduce){.event-node{transition:none;transform:none}.event-node:hover,.event-node:focus-visible,.event-node.is-current{transform:none!important}}
+/* Keep the initial pair balanced; larger collections use the full constellation. */
+.event-constellation:has(>.event-node:nth-child(2):last-child){grid-template-columns:repeat(2,minmax(0,1fr));max-width:760px;margin-inline:auto}
+
+.event-placeholder{aspect-ratio:1.2;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:20px;padding:20px;text-align:center;background:radial-gradient(circle at 65% 25%,#83cbd84d,transparent 65%),radial-gradient(circle at 20% 90%,#efb98655,transparent 65%),linear-gradient(145deg,#403957,#273e58)}
+.event-placeholder>span{font-size:10px;letter-spacing:2px;color:#f4d5b7}
+.event-placeholder>strong{font:400 clamp(22px,3vw,36px)/1.15 Georgia,serif}
+article.event-node{cursor:default}
+/* Uploaded event photos stay uncropped until captions and event groupings are supplied. */
+.event-photo-only img{aspect-ratio:auto;width:100%;height:auto;display:block}
+
+.event-node img[src$='treehacks-2024.jpg'],.event-node img[src$='neurips-2023.jpg']{aspect-ratio:auto;height:auto}
+
+.event-upload img{aspect-ratio:auto;width:100%;height:auto;display:block}
