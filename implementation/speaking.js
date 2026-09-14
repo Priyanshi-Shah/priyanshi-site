@@ -110,7 +110,10 @@ function animateBall(time){
 }
 function update(){
  if(root.hidden||!length)return;
- const target=root.scrollTop+root.clientHeight*.54;
+ const scroller=root.closest('#worldFlow');
+ const localScroll=scroller?scroller.scrollTop-root.offsetTop:root.scrollTop;
+ if(scroller&&(localScroll < -scroller.clientHeight || localScroll > root.offsetHeight))return;
+ const target=localScroll+(scroller?scroller.clientHeight:root.clientHeight)*.54;
  ball.style.opacity=target>gapStart+20&&target<gapEnd-20?0:1;
  let lo=0,hi=length;
  for(let i=0;i<18;i++){const m=(lo+hi)/2;if(path.getPointAtLength(m).y<target)lo=m;else hi=m}
@@ -118,9 +121,10 @@ function update(){
  if(!raf)raf=requestAnimationFrame(animateBall);
  let closest=0;points.slice(0,-1).forEach((v,i)=>{if(Math.abs(v.y-target)<Math.abs(points[closest].y-target))closest=i});
  islands.forEach((el,i)=>el.classList.toggle('is-current',i===points[closest].index));
- root.querySelector('.speaking-landscape').style.transform=reduced.matches?'':'translateY('+root.scrollTop*.045+'px)';
+ root.querySelector('.speaking-landscape').style.transform=reduced.matches?'':'translateY('+Math.max(0,localScroll)*.045+'px)';
 }
 root.addEventListener('scroll',update,{passive:true});
+root.addEventListener('flow-scroll',update);
 document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelAnimationFrame(raf);raf=0;lastFrame=0}else update()});
 new ResizeObserver(layout).observe(stage);
 root.querySelectorAll('img').forEach(img=>img.addEventListener('load',layout));
