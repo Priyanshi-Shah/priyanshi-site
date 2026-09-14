@@ -52,7 +52,7 @@ function drawRoad(){
  road.querySelectorAll(':scope > path').forEach(p=>p.setAttribute('d',d));moveBall();
 }
 function moveBall(){if(world.hidden)return;const path=road.querySelector('.road-center');if(!path.getAttribute('d'))return;const b=milestones.getBoundingClientRect(),y=Math.max(0,Math.min(b.height,innerHeight*.5-b.top))*(b.width>600?1410:1640)/b.height;let lo=0,hi=path.getTotalLength();for(let i=0;i<18;i++){const m=(lo+hi)/2;if(path.getPointAtLength(m).y<y)lo=m;else hi=m;}const p=path.getPointAtLength((lo+hi)/2);const ball=road.querySelector('.road-ball');ball.setAttribute('transform',`translate(${p.x} ${p.y}) scale(1 ${(b.width>600?1410:1640)/b.height}) rotate(${lo*2})`);}
-new ResizeObserver(drawRoad).observe(milestones);world.addEventListener('scroll',moveBall,{passive:true});
+new ResizeObserver(drawRoad).observe(milestones);world.addEventListener('scroll',moveBall,{passive:true});world.addEventListener('flow-scroll',moveBall);
 oldMap.remove();world.querySelector('.work-backdrop').remove();
 const landscape=document.createElement('div');landscape.className='ribbon-landscape';scene.before(landscape);landscape.append(scene,qualities,world.querySelector('.work-end'));
 records.forEach(r=>r.button.setAttribute('aria-label',[r.name,r.role,r.tags].filter(Boolean).join(' · ')));
