@@ -90,3 +90,7 @@ article.event-node{cursor:default}
 .event-node img[src$='treehacks-2024.jpg'],.event-node img[src$='neurips-2023.jpg']{aspect-ratio:auto;height:auto}
 
 .event-upload img{aspect-ratio:auto;width:100%;height:auto;display:block}
+.speaking-bridge-rails path{fill:none;stroke:#f6cda1;stroke-width:1;opacity:.35;filter:none}#speakingBall{transition:opacity .3s}
+.speaking-bridge-rails .bridge-depth{stroke:#473745;opacity:.9;stroke-linecap:round;stroke-linejoin:round}.speaking-bridge-rails .bridge-surface{stroke:#bb937e;opacity:.7;stroke-linecap:round;stroke-linejoin:round}
+.speaking-bridge-rails .bridge-surface{stroke:#8d7b77;opacity:.85}.speaking-bridge-rails .bridge-depth{stroke:#29263b;opacity:.9}
+@media(min-width:701px){.speaking-hero{margin-bottom:105px}.archive-title{margin-bottom:50px}}
