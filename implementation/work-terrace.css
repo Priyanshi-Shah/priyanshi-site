@@ -1,0 +1,135 @@
+.work-world{background:#29243b}.work-world:after{display:none}.terrace-scene{position:relative;min-height:1080px;isolation:isolate;overflow:hidden}.terrace-art{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,#251f3620 65%,#29243b 100%),url('assets/work-terraces.png') center/cover no-repeat;transition:transform .65s ease;transform:scale(1.005)}.terrace-scene .work-heading{max-width:1280px;padding:115px 50px 30px;margin:auto}.terrace-scene .work-heading h1{font-size:clamp(36px,4vw,58px);margin:0 0 12px;letter-spacing:-.025em}.terrace-scene .work-heading p{font:clamp(14px,1.5vw,19px)/1.5 Arial;max-width:920px;margin:0}.terrace-milestones{position:relative;max-width:1260px;height:830px;margin:auto}.terrace-card{position:absolute;appearance:none;text-align:left;color:#fceee3;font-family:Arial,sans-serif;border:1px solid #e6b599b0;border-radius:12px;background:linear-gradient(120deg,#292237eb,#292438d9);box-shadow:0 8px 24px #140f222f,inset 0 0 20px #f5ba8910;padding:22px 28px;display:flex;flex-direction:column;gap:9px;cursor:pointer;transition:opacity .25s,transform .3s,box-shadow .3s;min-height:120px;width:43%;}.terrace-card:hover,.terrace-card:focus-visible{outline:2px solid #f7d4ad;outline-offset:3px;box-shadow:0 0 25px #eeb48433}.terrace-name{font:32px/1.1 Georgia,serif}.terrace-role{font-size:16px;line-height:1.35;max-width:85%}.terrace-tags{font-size:12px;color:#e1cfdb;line-height:1.4;max-width:85%}.terrace-ms{left:8%;top:0}.terrace-ziva{right:4%;top:165px}.terrace-masters{left:30%;top:365px;width:32%}.terrace-lime{right:3%;top:540px;width:39%}.terrace-asr{left:9%;top:690px;width:48%}.terrace-small{width:auto;min-height:0;padding:12px 18px;border-radius:7px}.terrace-small .terrace-name{font:14px Arial}.terrace-mba{left:65%;top:365px}.terrace-ige{left:79%;top:385px}.terrace-startr{left:72%;top:450px}.terrace-icon{position:absolute;right:20px;top:25px;width:75px;opacity:.55;pointer-events:none}.terrace-icon svg{width:100%;fill:none;stroke:#eabea2;stroke-width:1}.terrace-ms .terrace-name,.terrace-ziva .terrace-name{padding-right:65px}.terrace-focused .terrace-card{opacity:0;pointer-events:none}.terrace-focused .terrace-art{transform:scale(1.035)}.terrace-detail{position:fixed;z-index:35;left:50%;top:50%;transform:translate(-50%,-50%);width:min(620px,calc(100vw - 40px));max-height:78vh;overflow:auto;padding:32px;box-sizing:border-box;border:1px solid #f7c7a1;border-radius:16px;background:linear-gradient(130deg,#262037e8,#2e273ecc);backdrop-filter:blur(9px);box-shadow:0 25px 90px #100d2866;animation:terrace-reveal .3s ease}.terrace-detail[hidden]{display:none}.terrace-close{position:absolute;right:12px;top:8px;background:none;border:0;color:#fce7d7;font-size:28px;cursor:pointer}.terrace-detail-name{font:34px Georgia;margin:0 0 20px;color:#fff0de}.terrace-detail-content>.work-company-logo,.terrace-detail-content>.work-ziva-brand,.terrace-detail-content>.work-orbit{display:none}.terrace-detail-content h2{font:30px/1.2 Georgia;color:#fff0df}.terrace-detail-content p{font:15px/1.65 Arial;color:#eadce5}.terrace-detail-content .eyebrow{font:11px Arial;letter-spacing:.12em;color:#eac5ae}.terrace-detail .work-columns{margin-top:22px;background:#30273a80;padding:16px}.terrace-detail .metric{font:56px Georgia;color:#ffddb3}.work-qualities{position:relative;padding-top:35px;margin-top:0}.work-end{padding-top:25px}.terrace-detail .work-wave{display:none}@keyframes terrace-reveal{from{opacity:0;transform:translate(-50%,-48%) scale(.97)}}
+@media(min-width:1500px){.terrace-scene{min-height:1150px}.terrace-milestones{height:900px}}
+@media(max-width:900px){.terrace-scene .work-heading{padding:110px 30px 30px}.terrace-milestones{height:870px}.terrace-card{padding:20px;width:47%}.terrace-name{font-size:27px}.terrace-role{font-size:14px}.terrace-ms{left:4%}.terrace-ziva{right:4%;top:160px}.terrace-masters{left:22%;top:365px;width:40%}.terrace-lime{right:4%;top:580px}.terrace-asr{left:5%;top:730px;width:55%}.terrace-small{width:auto;padding:10px 12px}.terrace-mba{left:64%;top:380px}.terrace-ige{left:81%;top:415px}.terrace-startr{left:69%;top:475px}.terrace-icon{width:50px;right:12px}.terrace-art{background-position:40% center}}
+@media(max-width:600px){.terrace-scene .work-heading{padding:105px 22px 25px}.terrace-scene .work-heading h1{font-size:37px}.terrace-milestones{height:1010px}.terrace-card{width:82%;padding:19px}.terrace-ms{left:5%}.terrace-ziva{right:5%;top:175px}.terrace-masters{left:8%;top:390px;width:78%}.terrace-lime{right:5%;top:675px}.terrace-asr{left:5%;top:850px;width:85%}.terrace-small{width:auto;padding:12px}.terrace-mba{left:12%;top:560px}.terrace-ige{left:48%;top:575px}.terrace-startr{left:68%;top:610px}.terrace-art{background-position:36% center}.terrace-detail{padding:25px;max-height:80vh}.terrace-role{max-width:100%}.terrace-icon{opacity:.3}.terrace-detail .work-columns{display:block}}
+@media(prefers-reduced-motion:reduce){.terrace-art,.terrace-card{transition:none}.terrace-detail{animation:none}.terrace-focused .terrace-art{transform:none}}
+
+@media(min-width:901px){.terrace-mba{top:485px}.terrace-ige{top:495px}.terrace-startr{top:505px;left:88%}}
+@media(min-width:601px) and (max-width:900px){.terrace-art{background-position:left center}.terrace-mba{left:58%;top:505px}.terrace-ige{left:73%;top:510px}.terrace-startr{left:84%;top:515px}}
+.terrace-detail-content .work-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px;font-size:12px}.terrace-detail-content .work-tags span{border:1px solid #ebc4a84d;border-radius:18px;padding:6px 10px}.terrace-detail-content .work-founding{margin-bottom:8px}
+
+/* Independent scenery and campus artifact: move the campus without repainting terrain. */
+.terrace-scene{min-height:0;--campus-x:6%;--campus-y:565px;--campus-width:29%}
+.terrace-art{background-image:linear-gradient(180deg,#251f3610 75%,#29243b 100%),url('assets/work-terraces-long.png');background-position:center;background-size:cover}
+.terrace-milestones{height:1610px}
+.terrace-campus{position:absolute;left:var(--campus-x);top:var(--campus-y);width:var(--campus-width);height:auto;pointer-events:none;filter:drop-shadow(0 12px 12px #20152550)}
+.terrace-ms{top:35px}.terrace-ziva{top:310px}.terrace-masters{top:665px;left:38%;width:37%}.terrace-lime{top:1040px}.terrace-asr{top:1350px}
+.terrace-mba{top:875px;left:36%}.terrace-ige{top:900px;left:54%}.terrace-startr{top:925px;left:66%}
+@media(max-width:900px){.terrace-scene{--campus-y:580px;--campus-width:34%;--campus-x:2%}.terrace-art{background-position:left center}.terrace-milestones{height:1570px}.terrace-ms{top:25px}.terrace-ziva{top:300px}.terrace-masters{top:680px;left:38%;width:55%}.terrace-lime{top:1040px}.terrace-asr{top:1320px}.terrace-mba{top:875px;left:25%}.terrace-ige{top:900px;left:48%}.terrace-startr{top:925px;left:63%}}
+@media(max-width:600px){.terrace-scene{--campus-y:550px;--campus-width:58%;--campus-x:3%}.terrace-art{background-position:25% center}.terrace-milestones{height:1600px}.terrace-ms{top:20px}.terrace-ziva{top:295px}.terrace-masters{top:750px;left:8%;width:84%}.terrace-mba{top:955px;left:9%}.terrace-ige{top:975px;left:46%}.terrace-startr{top:995px;left:67%}.terrace-lime{top:1110px}.terrace-asr{top:1380px}}
+/* Vector silhouette keeps the generated artifact independent of its raster backdrop. */
+.terrace-campus{mask:url('assets/geisel-silhouette.svg') center/100% 100% no-repeat;-webkit-mask:url('assets/geisel-silhouette.svg') center/100% 100% no-repeat}
+
+/* Quiet dusk landscape; the actual journey is an adaptive SVG road. */
+.terrace-art{background:radial-gradient(ellipse at 88% 12%,#cd8c7560,transparent 34%),linear-gradient(180deg,#282238 0%,#594257 28%,#3c304a 60%,#29243b 100%);background-size:auto}
+.terrace-art:after{content:'';position:absolute;inset:25% 0 0;background:linear-gradient(160deg,#27283f70,#24203910);clip-path:polygon(0 9%,9% 2%,17% 11%,29% 0,40% 12%,52% 5%,67% 16%,78% 8%,91% 18%,100% 13%,100% 100%,0 100%)}
+.terrace-milestones{height:1480px;max-width:1150px}
+.terrace-card{z-index:2;background:linear-gradient(120deg,#2b243bed,#362c42ed);box-sizing:border-box;min-height:150px;width:43%}
+.terrace-ms{left:7%;top:20px}.terrace-ziva{right:7%;top:270px}.terrace-masters{left:7%;top:530px;width:49%;min-height:170px;padding-right:150px}.terrace-lime{right:7%;top:1010px;width:43%}.terrace-asr{left:7%;top:1270px;width:48%}
+.terrace-small{min-height:0;width:auto;top:810px}.terrace-mba{left:30%}.terrace-ige{left:49%;top:830px}.terrace-startr{left:65%;top:850px}
+.terrace-masters .terrace-campus{left:auto;right:8px;top:auto;bottom:8px;width:145px;filter:none;opacity:.9}
+.terrace-brand-name{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.terrace-card>.work-company-logo,.terrace-card>.work-ziva-brand{position:relative;display:block;width:160px;height:40px;object-fit:contain;object-position:left;margin:0 0 8px;padding:0}
+.terrace-card .work-ziva-brand img{width:150px;height:40px;object-fit:contain;object-position:left}
+.terrace-card>.work-logo-lime{width:115px}.terrace-card>.work-logo-masters{width:155px}
+.terrace-road{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none;z-index:1}
+.terrace-road path{fill:none;stroke-linecap:round}.road-glow{stroke:#f2b084;stroke-width:15;filter:blur(8px);opacity:.35}.road-edge{stroke:#b67f72;stroke-width:5}.road-center{stroke:#ffe2b4;stroke-width:2}.road-ball{fill:#fff0cd;stroke:#ffcf99;stroke-width:2;filter:drop-shadow(0 0 8px #ffc187)}
+.terrace-focused .terrace-road{opacity:.25}
+@media(max-width:600px){.terrace-milestones{height:1560px}.terrace-card{width:86%;left:7%;right:auto}.terrace-ms{top:20px}.terrace-ziva{top:285px}.terrace-masters{top:550px;width:86%;padding-right:120px}.terrace-masters .terrace-campus{width:115px}.terrace-small{width:auto;min-height:0}.terrace-mba{left:9%;top:815px}.terrace-ige{left:46%;top:835px}.terrace-startr{left:67%;top:855px}.terrace-lime{top:1040px}.terrace-asr{top:1320px}.terrace-card>.work-logo-masters{width:135px}}
+
+/* Approved mountain ribbon world, with independent responsive cards and road. */
+.work-world{background:#252338 url('assets/work-ribbon-world.png') center top/100% 100% no-repeat}
+.terrace-art{background:transparent}.terrace-art:after{display:none}
+.terrace-scene .work-heading{text-align:center;padding-top:120px;padding-bottom:55px}.terrace-scene .work-heading p{margin:auto}
+.terrace-milestones{height:1410px}
+.terrace-ms{top:25px}.terrace-ziva{top:280px}
+.terrace-mba{left:12%;top:580px}.terrace-ige{left:30%;top:600px}.terrace-startr{left:44%;top:620px}
+.terrace-lime{top:740px;right:5%;left:auto;width:42%}
+.terrace-masters{top:890px;left:5%;width:44%;padding-right:135px}
+.terrace-asr{top:1170px;left:39%;width:48%}
+.terrace-masters .terrace-campus{width:135px}
+.road-glow{stroke-width:22;opacity:.55}.road-edge{stroke:#f3b08c;stroke-width:8}.road-center{stroke:#ffe4bc;stroke-width:3}
+.road-ball circle{fill:url(#road-pearl);stroke:#fff0cb;stroke-width:1}.terrace-road .pearl-seam{stroke:#fff9e6;stroke-width:1;opacity:.65;fill:none}
+.work-qualities{max-width:none;padding:80px 20px 40px;margin:0;isolation:isolate;background:linear-gradient(180deg,transparent,#24203722)}
+.quality-constellation{max-width:780px;margin:auto;height:470px}.qualities-intro{max-width:650px;margin:0 auto 35px;font-size:clamp(27px,3vw,40px)}
+.quality-node{background:transparent;border:0;box-shadow:none;gap:10px}.quality-symbol{display:grid;place-items:center;width:55px;height:55px;border-radius:50%;border:1px solid #efc39c;background:#30273bc9;box-shadow:0 0 18px #f9b97a30}.quality-heart{width:175px;height:175px;border:1px solid #ffe2b7;background:radial-gradient(circle at 30% 25%,#f6d7af66,#6b495766 40%,#30283be0 75%);box-shadow:0 0 35px #efb18444}.quality-heart strong{font-size:24px}.quality-heart-spark{display:none}.quality-heart>span:last-child{display:none}.quality-links path{stroke:#f9c99a;stroke-width:1.5}.quality-links ellipse{stroke:#f1ba8855;stroke-dasharray:none}.work-end{background:transparent}
+@media(max-width:600px){.terrace-scene .work-heading{padding:110px 22px 40px}.terrace-milestones{height:1640px}.terrace-ms{top:20px}.terrace-ziva{top:290px}.terrace-mba{left:8%;top:540px}.terrace-ige{left:44%;top:560px}.terrace-startr{left:65%;top:580px}.terrace-lime{left:10%;right:auto;top:740px;width:84%}.terrace-masters{left:6%;top:1030px;width:88%;padding-right:115px}.terrace-asr{left:10%;top:1340px;width:84%}.terrace-masters .terrace-campus{width:115px}.quality-heart{width:145px;height:145px}.quality-heart strong{font-size:20px}.work-qualities{padding-top:60px}.terrace-card>.work-logo-ms{width:175px;object-fit:cover}}
+.work-world{background:#252338}.ribbon-landscape{background:url('assets/work-ribbon-world.png') center top/100% 100% no-repeat;min-height:100%}
+.terrace-card>.work-logo-ms{object-fit:cover;object-position:center;width:185px;height:44px}
+
+/* Match the mockup's broad ribbon and compact, staggered composition. */
+.terrace-milestones{max-width:1080px}
+.terrace-card{border-color:#e8b18c;background:linear-gradient(125deg,#211d35e8,#36263fce);border-radius:11px;box-shadow:inset 0 0 24px #efb5900c,0 12px 26px #17132524;padding:24px 28px;min-height:155px}
+.terrace-ms{left:12%;width:44%;top:25px}.terrace-ziva{right:9%;width:40%;top:270px}
+.terrace-mba{left:16%;top:535px}.terrace-ige{left:34%;top:535px}.terrace-startr{left:47%;top:535px}
+.terrace-small{min-height:0;width:auto;padding:15px 20px}
+.terrace-lime{right:9%;width:40%;top:680px}.terrace-masters{left:12%;width:44%;top:860px}
+.terrace-asr{left:16%;width:44%;top:1160px}
+.road-glow{stroke-width:27;filter:blur(9px);opacity:.4}.road-edge{stroke:#e8a182;stroke-width:13}.road-center{stroke:#ffe1ac;stroke-width:6}
+.terrace-card>.work-company-logo,.terrace-card>.work-ziva-brand{height:44px;margin-bottom:10px}.terrace-role{font-size:17px}.terrace-tags{font-size:13px}
+.terrace-masters{padding-right:125px}.terrace-masters .terrace-campus{width:145px;bottom:5px;right:5px}
+@media(max-width:600px){.terrace-card{left:8%;right:auto;width:84%;padding:22px;min-height:155px}.terrace-ms{top:25px}.terrace-ziva{top:290px}.terrace-small{width:auto;min-height:0;padding:12px}.terrace-mba{left:8%;top:550px}.terrace-ige{left:44%;top:550px}.terrace-startr{left:66%;top:550px}.terrace-lime{top:740px}.terrace-masters{top:1030px;padding-right:115px}.terrace-asr{top:1340px}.terrace-role{font-size:15px}.terrace-masters .terrace-campus{width:115px}.road-edge{stroke-width:9}.road-center{stroke-width:4}}
+
+/* Always-visible editorial cards replace hover disclosures. */
+.terrace-card{cursor:default;gap:12px;min-height:0;padding:25px 28px;transition:none;background:linear-gradient(125deg,#211d35f5,#36263fea)}
+.terrace-card:hover{outline:none;box-shadow:inset 0 0 24px #efb5900c,0 12px 26px #17132524}
+.terrace-card h2{font:clamp(23px,2.5vw,31px)/1.15 Georgia,serif;color:#fff0dd;margin:2px 0 5px}
+.terrace-card p{font:14px/1.6 Arial,sans-serif;color:#ecdee7;margin:0}
+.terrace-card .eyebrow{font:10px/1.5 Arial,sans-serif;letter-spacing:.12em;color:#eac7b0}
+.terrace-card .work-tags{display:flex;flex-wrap:wrap;gap:7px;font:11px/1.4 Arial;color:#e3c7d3;margin-top:8px}
+.terrace-card .work-tags span{padding:4px 8px;border:1px solid #e5b99940;border-radius:15px}
+.terrace-card .work-orbit,.terrace-card .work-wave{display:none}
+.terrace-card .work-founding{align-self:flex-start;margin:0;font-size:10px}
+.terrace-card .work-growth{font-size:12px;border-top:1px solid #efd0b72b;padding-top:12px}
+.terrace-card .work-ownership{margin:0;padding-top:12px}.terrace-card h3{font:600 13px Arial;color:#f6d2b5;margin:0 0 7px}
+.terrace-card .work-columns{display:grid;grid-template-columns:1fr 1fr;gap:18px;background:transparent;margin:8px 0 0;padding:0;border:0}
+.terrace-card .work-columns p{font-size:12px}
+.terrace-card .metric{font:44px Georgia;color:#ffe0ad}.terrace-card .metric-note{font:12px Arial;color:#e8d2df}
+.terrace-ms{top:25px;width:46%}.terrace-ziva{top:355px;width:46%;right:5%}
+.terrace-mba{top:990px;left:8%}.terrace-ige{top:990px;left:30%}.terrace-startr{top:990px;left:52%}
+.terrace-small{width:20%;padding:16px;gap:7px}.terrace-small h2{font-size:20px}.terrace-small p{font-size:12px}.terrace-small .eyebrow{font-size:9px}
+.terrace-lime{top:1190px;right:5%;width:46%}.terrace-masters{top:1510px;left:8%;width:49%;padding-right:28px;padding-bottom:115px}
+.terrace-asr{top:1870px;left:39%;width:49%}.terrace-milestones{height:2280px}
+.terrace-masters .terrace-campus{width:160px;right:15px;bottom:4px}
+@media(max-width:600px){.terrace-card{left:7%;right:auto;width:86%;padding:23px}.terrace-ms{top:25px}.terrace-ziva{top:370px}.terrace-small{width:27%;padding:12px;top:1050px}.terrace-mba{left:6%}.terrace-ige{left:36.5%}.terrace-startr{left:67%}.terrace-small h2{font-size:17px}.terrace-small p{font-size:11px}.terrace-lime{top:1260px}.terrace-masters{top:1660px;padding-bottom:115px}.terrace-asr{top:2070px}.terrace-milestones{height:2520px}.terrace-card .work-columns{gap:12px}.terrace-card h2{font-size:26px}.terrace-small h2{font-size:17px}}
+
+/* Cinematic, open chapters. Scroll remains native and all copy stays in the document. */
+.terrace-milestones{height:auto;max-width:1180px;padding:0 6%;box-sizing:border-box}
+.terrace-card.work-chapter{position:relative;inset:auto;width:100%;min-height:72vh;margin:0;padding:100px 0;display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center;border:0;border-radius:0;background:none;box-shadow:none;isolation:isolate}
+.work-chapter:before{content:'';position:absolute;inset:10% -8%;z-index:-1;background:radial-gradient(ellipse,#211e34e8 10%,#211e3488 48%,transparent 72%);pointer-events:none}
+.work-chapter .chapter-title,.work-chapter .chapter-copy{opacity:.45;transform:translateX(var(--entrance));transition:transform .9s cubic-bezier(.2,.7,.2,1),opacity .8s}
+.work-chapter .chapter-copy{transform:translateX(calc(var(--entrance) * -1));transition-delay:.12s;display:flex;flex-direction:column;gap:20px}
+.work-chapter.chapter-active .chapter-title,.work-chapter.chapter-active .chapter-copy{opacity:1;transform:none}
+.work-chapter .chapter-title{display:flex;flex-direction:column;gap:23px}
+.work-chapter h2{font:clamp(32px,4vw,56px)/1.08 Georgia;letter-spacing:-.025em;margin:0}
+.work-chapter p{font-size:16px;line-height:1.75}.work-chapter .eyebrow{font-size:10px;letter-spacing:.18em}
+.work-chapter .work-company-logo{width:185px;height:45px;margin:0;object-fit:contain}.work-chapter .work-logo-ms{object-fit:cover}.work-chapter .work-logo-lime{width:125px}.work-chapter .work-ziva-brand{width:160px;height:44px;margin:0}.work-chapter .work-ziva-brand img{width:160px;height:44px}
+.work-chapter .metric{font-size:86px;line-height:1}.work-chapter .work-columns{display:block}.work-chapter .work-columns>div{margin-bottom:20px}.work-chapter .work-columns p{font-size:15px}
+.work-chapter .terrace-campus{position:relative;inset:auto;width:min(270px,100%);align-self:center}
+.chapter-sidequests{position:relative;display:flex;gap:30px;padding:55px 0;margin:0;z-index:2}
+.chapter-sidequests .terrace-small{position:relative;inset:auto;flex:1;width:auto;padding:15px 0;border:0;border-top:1px solid #e3b89777;background:none;border-radius:0;box-shadow:none}
+.chapter-sidequests .terrace-small h2{font-size:23px}.chapter-sidequests .terrace-small p{font-size:13px}
+.terrace-road{opacity:.55;z-index:0}.road-glow{opacity:.25}.road-edge{stroke-width:8}.road-center{stroke-width:3}
+@media(max-width:650px){.terrace-card.work-chapter{grid-template-columns:1fr;gap:32px;padding:85px 0;min-height:70vh}.work-chapter h2{font-size:38px}.work-chapter p{font-size:15px}.chapter-sidequests{gap:16px}.chapter-sidequests .terrace-small h2{font-size:18px}.work-chapter .chapter-title,.work-chapter .chapter-copy{transform:translateY(22px)}.work-chapter .terrace-campus{width:220px}.terrace-milestones{padding:0 8%}}
+@media(prefers-reduced-motion:reduce){.work-chapter .chapter-title,.work-chapter .chapter-copy{opacity:1;transform:none;transition:none}}
+
+/* Two smaller scroll beats: MicroMBA, then IGE and StartR together. */
+.chapter-sidequests{display:block;padding:0}
+.minor-chapter{position:relative;display:flex;align-items:center;gap:12%;min-height:52vh;padding:55px 0;box-sizing:border-box}
+.minor-mba{min-height:42vh;justify-content:flex-start}
+.chapter-sidequests .minor-mba .terrace-small{flex:0 1 330px}
+.chapter-sidequests .minor-ventures .terrace-small{flex:1}
+.minor-chapter .terrace-small{opacity:.25;transform:translateX(-60px);transition:opacity .85s ease,transform .95s cubic-bezier(.2,.75,.2,1)}
+.minor-ventures .terrace-startr{transform:translateX(60px);transition-delay:.13s}
+.minor-chapter.chapter-active .terrace-small{opacity:1;transform:translateX(0)}
+.chapter-sidequests .minor-ventures h2{font-size:clamp(24px,3vw,36px)}
+.chapter-sidequests .minor-ventures p{font-size:15px;line-height:1.65}
+@media(max-width:650px){.minor-chapter{gap:24px;min-height:48vh}.minor-mba{min-height:35vh}.chapter-sidequests .minor-ventures h2{font-size:24px}.chapter-sidequests .minor-ventures p{font-size:13px}.minor-chapter .terrace-small{transform:translateX(-24px)}.minor-ventures .terrace-startr{transform:translateX(24px)}}
+@media(prefers-reduced-motion:reduce){.minor-chapter .terrace-small{opacity:1;transform:none;transition:none}}
+
+/* Long ASR headline needs a quieter reading scale. */
+.work-chapter.terrace-asr h2{font-size:clamp(28px,2.7vw,40px);line-height:1.18;letter-spacing:-.015em;text-wrap:balance}
+
+.work-chapter.terrace-asr .chapter-title h2{font-size:clamp(36px,4vw,56px);text-wrap:initial}
+.work-chapter.terrace-asr .asr-achievement{font:clamp(23px,2.2vw,31px)/1.25 Georgia,serif;color:#fff0dd;margin:0}
+.work-chapter.terrace-asr .metric-note{font:16px/1.5 Arial,sans-serif;color:#e8d2df}
